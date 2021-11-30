@@ -11,5 +11,9 @@ from django.http import HttpResponse
 
 # def david(request):
 #     return HttpResponse("Hello, David!")
-def greet(request, name):
-    return HttpResponse(f"Hello, {name.capitalize()}!")
+#-------------------------------------------------
+# def greet(request, name):
+#     return HttpResponse(f"Hello, {name.capitalize()}!")
+#----------------------------------------------------
+def index(request):
+    return HttpResponse("<h1 style=\color:blue\">Hello, World!</h1>")
