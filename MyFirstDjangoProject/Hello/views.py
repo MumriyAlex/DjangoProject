@@ -15,5 +15,10 @@ from django.http import HttpResponse
 # def greet(request, name):
 #     return HttpResponse(f"Hello, {name.capitalize()}!")
 #----------------------------------------------------
-def index(request):
-    return HttpResponse("<h1 style=\color:blue\">Hello, World!</h1>")
+#def index(request):
+#    return render(request, "hello/index.html")
+#-------------------------------------------------
+def greet(request, name):
+    return render(request, "hello/greet.html", {
+     "name": name.capitalize()
+    })
